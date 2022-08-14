@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
     <h1>Welcome to Pranav's Component Library</h1>
@@ -17,37 +18,47 @@
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest</h2>
     <p>Let me show you the normal text. This is free flowing ana will wrap at the end like a paragraph</p>
+    <p>This paragraph will have a <strong>bold</strong> text</p>
     <small>This is relatively smaller text</small>
 
     <h2>@container</h2>
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
-    <div>This is a center container and it will go till the specified width</div>
+    <div class="container container-center">This is a centered container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link primary-link"href="/">Primary Link</a>
+    <a class="link secondary-link"href="/">Secondary Link</a>
+    
 
     <hr>
 
     <h2>@lists</h2>
 
+    <h3>unordered list</h3>
+
+    <ul class="list-non-bullet">
+        <li>Item one</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+
     <h3>unordered inline list</h3>
 
-    <ul>
-        <li>Inline Item one</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item one</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
     </ul>
 
    <h3>reverse ordered list</h3>
 
-   <ol>
+   <ol reversed>
     <li>milk</li>
     <li>veggies</li>
     <li>fruits</li>
@@ -57,41 +68,45 @@
    
    <h2>@nav</h2>
 
-   <nav>
-    <div>iAmBrand</div>
-    <ul>
-        <li>
-            <a href="/">home</a>
+   <nav class="navigation container">
+    <div class="nav-brand">iAmBrand</div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline" >
+            <a class="link link-active" href="/">home</a>
         </li>
-        <li>
-            <a href="/">products</a>
+        <li class="list-item-inline">
+            <a class="link" href="/">products</a>
         </li>
-        <li>
-            <a href="/">about</a>
+        <li class="list-item-inline">
+            <a class="link" href="/">about</a>
         </li>
     </ul>
    </nav>
      
    <hr>
 
-   <h2>header</h2>
+   <h2>@header</h2>
 
-   <header>
-     <img src="images/frontend.svg"/>
-     <h1>heading inside header<h1>
+   <header class="frontend">
+     <img class="frontend-img" src="images/frontend.svg"/>
+     <h1 class="frontend-heading">Pranav Bhargav the <span class="heading-inverted">web developer</span></h1>
    </header>
 
    <hr>
 
    <h2>@section</h2>
-   <section>
-    <h3>white section</h3>
-    <p>This will have white background</p>
+   <section class="section">
+    <div class="container container-center">
+    <h1>white section</h1>
+    <p>We are open community of developers building resources for better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does make us stronger. Together we can continue to drive innovation on the Web to serve the greater good, it starts here, with you.</p>
+</div>
    </section>
 
-   <section>
-    <h3>off white section</h3>
-    <p>This will gray background</p>
+   <section class="section ow">
+    <div class="container container-center">
+    <h1>off white section</h1>
+    <p>We are open community of developers building resources for better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does make us stronger. Together we can continue to drive innovation on the Web to serve the greater good, it starts here, with you.</p>
+</div>
    </section>
 
    <hr>
