@@ -26,6 +26,10 @@ hr {
   margin: auto;
 }
 
+.line {
+  line-height: 0.7rem;
+}
+
 /** links **/
 
 .link {
@@ -64,7 +68,7 @@ hr {
   color: white;
   padding: 1rem;
   border-bottom-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .navigation .nav-brand {
@@ -92,7 +96,7 @@ hr {
 }
 
 .frontend .frontend-img {
-  max-width: 350px;
+  max-width: 500px;
   display: block;
   margin: auto;
 }
